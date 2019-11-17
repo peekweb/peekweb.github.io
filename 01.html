@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+        <link href="https://cdn.bootcss.com/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img tu="450x300" alt='#' />
+                    <p>slider</p>
+                </div> 
+
+            
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+
+        <script>
+var prependNumber = 1;
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+        </script>
+
+
+        <!--
+        <script src="https://t.peekweb.com/js/common.js"></script>
+        -->
+        
+        <script src="./js/common.js"></script>
+    </body>
+</html>
