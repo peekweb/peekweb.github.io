@@ -3,7 +3,7 @@ log = console.log;
 function pic(str) {
     if(/\dx\d+/.test(str)) {
         var strs = str.split('x');
-        return  'https://img.vpsok.com/w' + strs[0] + 'h' + strs[1] +'.png';
+        return  'https://img.vpsok.com/w' + strs[0] + 'h' + strs[1] +'.png' + '?' + Math.random();
     } else {
         return  'https://img.vpsok.com/w450h300.png';
     }
